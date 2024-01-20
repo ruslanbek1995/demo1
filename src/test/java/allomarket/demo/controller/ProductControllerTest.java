@@ -24,6 +24,15 @@ import org.springframework.web.context.WebApplicationContext;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+/**
+ * <p>Тестовый класс. Используется для работы тестов api обьекта {@link Product}.</p>
+ * <p>Применяет {@link MockMvc} - для итеграционных тестов</p>
+ * <p>Ипользует аннотации Lombok</p>
+ * <p>{@link FieldDefaults} добавляет ко всем полям окончательный и приватный модификаторы</p>
+ *
+ * @author haadibolotbekov
+ * @see <a href="https://github.com/Khaadikg/demo"> Code github Repo</a>
+ */
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 @AutoConfigureMockMvc

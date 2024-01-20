@@ -7,7 +7,6 @@ import allomarket.demo.repository.ProductRepository;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -17,8 +16,15 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * <p>Тестовый класс. Используется для работы тестов бизнес логики обьекта {@link Product}.</p>
+ * <p>Применяет {@link Mockito} - для модульных тестов</p>
+ * <p>Ипользует аннотации Lombok</p>
+ * <p>{@link FieldDefaults} добавляет ко всем полям окончательный и приватный модификаторы</p>
+ *
+ * @author haadibolotbekov
+ * @see <a href="https://github.com/Khaadikg/demo"> Code github Repo</a>
+ */
 @ExtendWith(MockitoExtension.class)
 @FieldDefaults(level = AccessLevel.PRIVATE)
 class ProductServiceTest {

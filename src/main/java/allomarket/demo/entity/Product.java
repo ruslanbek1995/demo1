@@ -1,16 +1,21 @@
 package allomarket.demo.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
-import java.util.List;
-import java.util.Set;
+/**
+ * Класс продукции со свойствами (id, name, description, price).
+ * <p>Ипользует аннотации Lombok для генерации дефолотных конструкций (конструкторы, геттеры/сеттеры...)</p>
+ *
+ * @author haadibolotbekov
+ * @see <a href="https://github.com/Khaadikg/demo"> Code github Repo</a>
+ */
 
 @Entity
 @Table(name = "products")
-@Data @Builder
+@Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
